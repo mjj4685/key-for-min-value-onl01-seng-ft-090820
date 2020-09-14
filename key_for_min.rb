@@ -1,19 +1,16 @@
 # prereqs: iterators, hashes, conditional logic
 # Given a hash with numeric values, return the key for the smallest value
-def key_for_min_value(name_hash)
-  lowest_value = 0
-  lowest_key = nil
+def key_for_min_value(max_love)
+  love = 0
+  lowkey = nil
 
-  name_hash.each do |key,value|
-    #if the lowest_value is in it's intial state
-    #or if the value of the current key is less than the lowest_value
-    #then: set the lowest_value to value and lowest_key to key
-    if lowest_value == 0 || value < lowest_value
-      lowest_value = value
-      lowest_key = key
+  max_love.each do |key,value|
+    if love == 0 || value < love
+      love = value
+      lowkey = key
     end
   end
-  lowest_key
+  lowkey
 end
 
 ikea = {:chair => 25, :table => 85, :mattress => 450}
