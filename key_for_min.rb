@@ -14,5 +14,5 @@ def key_for_min_value(name_hash)
 lowkey
 end
 
-ikea = {:chair => 25, :table => 85, :mattress => 450}
-key_for_min_value(ikea)
+vibes = {:low => 25, :meh => 85, :yay => 450}
+key_for_min_value(vibes)
